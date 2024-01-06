@@ -27,7 +27,7 @@
   list-style: none;
 }
 
-.Weather img {
+.Weather .clearfix img {
   height: 64px;
   width: 64px;
   margin-right: 10px;
@@ -43,7 +43,7 @@
 .Weather .float-left {
   display: inline-block;
   vertical-align: top;
- }
+}
 
 .Weather .unit {
   vertical-align: top;
