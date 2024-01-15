@@ -20,17 +20,16 @@ if (loaded) {
   return (
     <div className="WeatherForecast">
       <div className="row">
-        {forecast.map(function (dailyForecast, index) {
-          if (index < 5) {
-            return (
+        {forecast.slice(0,5).map(function (dailyForecast, index) {
+          return (
               <div className="col" key={index}>
                 <WeatherForecastDay data={dailyForecast} />
               </div>
-            )
-          }})} 
+            );
+        })} 
       </div>
     </div>  
-  )
+  );
 } else {
   let apiKey = "96ad27349a64ea1dcdfbe6f4d458c085";
   let latitude = props.coordinates.lat;
